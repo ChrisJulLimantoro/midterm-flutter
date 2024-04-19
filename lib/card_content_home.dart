@@ -20,6 +20,7 @@ class CardCreatorHome extends StatelessWidget {
               padding: const EdgeInsets.only(right: 8.0),
               child: Card(
                 color: Colors.white,
+                surfaceTintColor: Colors.white,
                 child: SizedBox(
                   width: 180.0,
                   height: 200.0,
