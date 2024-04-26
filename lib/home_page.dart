@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:uts_ambw/custom_app_bar.dart';
 import 'card_content_home.dart';
@@ -35,7 +36,7 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.bottomCenter,
                   children: [
                     SizedBox(
-                      height: 240,
+                      height: kIsWeb ? 400 : 240,
                       width: MediaQuery.of(context).size.width,
                       child: const Image(
                         image: AssetImage('assets/images/food1.jpg'),
@@ -43,7 +44,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height: 180,
+                      height: kIsWeb ? 180 : 320,
                       width: MediaQuery.of(context).size.width,
                       alignment: Alignment.bottomCenter,
                       decoration: const BoxDecoration(
